@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Css.css">
+    <title>Simple Like Button</title>
+
+
+</head>
+
+<body>
+
+    <div class="containerr">
+        <div class="roww">
+            <div class="coll-6 pics">
+                <div class="post">
+                    <div class="pic">
+                        <img src="pic-1.png">
+                    </div>
+                    <div class="para">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, fugiat eligendi! Odio sed
+                            repudiandae eligendi rerum voluptatum dicta vero consequatur soluta</p>
+                    </div>
+                    <div class="icons">
+                    </div>
+                </div>
+
+                <div class="post">
+                    <div class="pic">
+                        <img src="pic-4.jpg">
+                    </div>
+                    <div class="para">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, fugiat eligendi! Odio sed
+                            repudiandae eligendi rerum voluptatum dicta vero consequatur soluta</p>
+                    </div>
+                    <div class="icons">
+                    </div>
+                </div>
+
+                <div class="post">
+                    <div class="pic">
+                        <img src="pic-1.png">
+                    </div>
+                    <div class="para">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, fugiat eligendi! Odio sed
+                            repudiandae eligendi rerum voluptatum dicta vero consequatur soluta</p>
+                    </div>
+                    <div class="icons">
+
+                    </div>
+                </div>
+
+                <div class="post">
+                    <div class="pic">
+                        <img src="pic-2.jpg">
+                    </div>
+                    <div class="para">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, fugiat eligendi! Odio sed
+                            repudiandae eligendi rerum voluptatum dicta vero consequatur soluta</p>
+                    </div>
+                    <div class="icons">
+
+                    </div>
+                </div>
+
+                <div class="post">
+                    <div class="pic">
+                        <img src="pic-3.jpg">
+                    </div>
+                    <div class="para">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, fugiat eligendi! Odio sed
+                            repudiandae eligendi rerum voluptatum dicta vero consequatur soluta</p>
+                    </div>
+                    <div class="icons">
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script>
+
+        const container = document.querySelector('.containerr')
+        const pics = container.querySelector('.pics')
+        Array.from(pics.children).forEach(e => {
+            var post = e;
+            var icons = post.querySelector('.icons')
+            icons.addEventListener('click', () => {
+
+
+                icons.classList.toggle('like-yes')
+
+            })
+
+
+        })
+    </script>
+</body>
+
+</html>
